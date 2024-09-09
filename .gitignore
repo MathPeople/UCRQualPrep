@@ -6,3 +6,4 @@ vendor
 .Rproj.user
 UCRQualPrep.Rproj
 .Rhistory
+*.code-workspace
