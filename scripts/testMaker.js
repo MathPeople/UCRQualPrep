@@ -53,7 +53,7 @@ function makeComplexTest(viableProbs) {
     probsByTopic = sortProblemsByTopic(viableProbs);
     cProbs = getRandomProblems(probsByTopic["RiemannSurfaces"],3);
     
-    // Create new arrarys without any Part C problems, aka those tagged RiemannSurfaces
+    // Create new arrays without any Part C problems, aka those tagged RiemannSurfaces
     abProbs = [...viableProbs]; 
     for(i = abProbs.length; i--;){
         if(abProbs[i].topics.includes("RiemannSurfaces") || abProbs[i].topics.includes("PartC")){
