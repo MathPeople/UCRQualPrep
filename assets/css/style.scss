@@ -4,6 +4,12 @@
 
 @import "{{ site.theme }}";
 @import "/assets/css/problemFormat.css";
+@import "/assets/css/images.css";
+
+$ucr-blue: rgb(0,61,165);
+$ucr-yellow: rgb(255,184,28);
+$dark-gray: rgb(21,21,21);
+$light-gray: rgb(200, 200, 200);
 
 // Change Content Width
 .inner{
@@ -45,7 +51,7 @@ nav ul li {
   text-decoration: none;
   font-weight: bold;
   padding: 14px 14px;
-  color: white;
+  color: $ucr-blue;
 }
 
 // --- Page Formatting ---
@@ -59,12 +65,18 @@ body, html {
 body {
   display: flex;
   flex-direction: column;
+
+}
+
+#header_wrap {
+  background: $ucr-yellow;
 }
 
 #main_content_wrap {
   display: flex;
   flex-direction: column;
   flex: 1;
+  background-color: $ucr-blue;
 }
 
 #main_content {
@@ -72,11 +84,17 @@ body {
   padding-top: 10px; // Overrides site theme change
   border: 2px groove rgb(255, 255, 255);
   margin: 20px auto;
+  background-color: $light-gray;
 }
 
 #footer_wrap {
   flex: 1;
   max-height: 50px;
+  background: $ucr-yellow;
+}
+
+.centered {
+  text-align: center;
 }
 
 // --- Topics List Formatting ---
